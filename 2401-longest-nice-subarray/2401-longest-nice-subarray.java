@@ -5,7 +5,6 @@ class Solution {
         int curr = 0;
         for(int r = 0 ;r < nums.length ;r++){
             if((curr & nums[r]) ==0){
-                System.out.println(curr & nums[r]);
                 res = Math.max(res , r-l+1);
                 curr |= nums[r];
             }
